@@ -36,7 +36,7 @@ define('TEST_ENV', $_SERVER['SERVER_ADDR'] == '192.168.1.22');
 define('EMAIL_ADMIN', 'prologi1985@mail.ru');
 define('EMAIL_ADMIN_CC', 'fyr.work@gmail.com');
 
-define('PATH_FILES_UPLOAD', '/home/fyre/domains/sektor.by/public_html/app/webroot/files/');
+define('PATH_FILES_UPLOAD', WWW_ROOT.'files'.DS);
 
 fdebug("bootstrap\r\n");
 

@@ -38,8 +38,6 @@ define('EMAIL_ADMIN_CC', 'fyr.work@gmail.com');
 
 define('PATH_FILES_UPLOAD', WWW_ROOT.'files'.DS);
 
-fdebug("bootstrap\r\n");
-
 function fdebug($data, $logFile = 'tmp.log', $lAppend = true) {
 	// if (TEST_ENV) {
 		file_put_contents($logFile, mb_convert_encoding(print_r($data, true), 'cp1251', 'utf8'), ($lAppend) ? FILE_APPEND : null);

@@ -8,7 +8,6 @@ class AppController extends Controller {
 	    $this->_beforeInit();
 	    parent::__construct($request, $response);
 	    $this->_afterInit();
-		fdebug("AppController.__construct\r\n");
 	}
 	
 	protected function _beforeInit() {
@@ -25,7 +24,6 @@ class AppController extends Controller {
 	}
 	
 	public function beforeRender() {
-		fdebug("AppController.beforeRender\r\n");
 		$this->set('aNavBar', $this->aNavBar);
 		$this->set('currMenu', $this->currMenu);
 		$this->set('aBottomLinks', $this->aBottomLinks);
